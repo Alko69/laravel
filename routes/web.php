@@ -17,10 +17,8 @@ Route::get('/hello', function () {
     return view('test', ['name' => 'ez']);
 });
 
-Route::get('/' ,function (){
-    return view('home');
-});
+Route::get('/contact', 'App\Http\Controllers\Control@contact');
 
-Route::get('/contact' ,function (){
-    return view('contact');
-});
+Route::get('/lien2', 'App\Http\Controllers\Control@lien2');
+
+Route::get('/', 'App\Http\Controllers\Control@home');

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -5,26 +8,70 @@
 
 li{
     list-style: none;
+    margin-left: 30px;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+}
+
+li:hover {
+    background-color: #1c2b75;
 }
 
 a{
     text-decoration: none;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    height: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav{
-    background-color: lavenderblush;
+    background-color: transparent;
     display: flex;
+    height: 70px;
 }
 
-ul{
+#navul{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     height: 100%;
     align-items: center;
-    width: 100%;
+}
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+h1{
+    margin: 20px;
+    font-family: 'Zen Tokyo Zoo', cursive;
+    color: white;
 }
 
 #logo{
-    width: 40px;
-    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    width: 65%
+}
+
+body{
+    background-image: url(../imges/back.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #010f3f;
+    height: 100vh;
+}
+
+a:hover{
+    color: white;
 }

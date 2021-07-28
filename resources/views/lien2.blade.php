@@ -1,14 +1,11 @@
 @extends('layouts.base')
 
 @section('title')
-Accueil
+Lien 2
 @endsection
 
 @section('css', 'accueil')
 
 @section('content')
-<h1>Accueil</h1>
-<h2>Bienvenue BG</h2>
-<p>Press Start</p>
+<h1>Lien 2</h1>
 @endsection
-

@@ -10,11 +10,11 @@
 <body>
     <header>
       <nav>
-        {{-- <div><img id="logo" src="/imges/1200px-Laravel.svg.png" alt=""></div> --}}
-        <ul>
+        <div id="logo"><a href="/"><img class="logo" src="/imges/1200px-Laravel.svg.png" alt=""></a></div>
+        <ul id="navul">
           <li><a href="/">Accueil</a></li>
           <li><a href="contact">Contact</a></li>
-          <li><a href="/">Lien 2</a></li>
+          <li><a href="lien2">Lien 2</a></li>
         </ul>
       </nav>
     </header>
