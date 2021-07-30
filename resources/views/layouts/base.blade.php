@@ -10,11 +10,16 @@
 <body>
     <header>
       <nav>
-        <div id="logo"><a href="/"><img class="logo" src="/imges/1200px-Laravel.svg.png" alt=""></a></div>
+        <div id="logo"><a class = "nava" href="/"><img class="logo" src="/imges/1200px-Laravel.svg.png" alt=""></a></div>
         <ul id="navul">
-          <li><a href="/">Accueil</a></li>
-          <li><a href="contact">Contact</a></li>
-          <li><a href="lien2">Lien 2</a></li>
+          <li><a class = "nava" style="color: red" href="/">Accueil</a></li>
+          <li><a class = "nava" href="contact">Contact</a></li>
+          <div>
+              <li id="menu">
+                <a class = "nava" href="bookList">Book List</a>
+                <a class = "deroule nava" href="addBook">Add a Book</a>
+              </li>
+          </div>
         </ul>
       </nav>
     </header>

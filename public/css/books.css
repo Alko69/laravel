@@ -1,0 +1,55 @@
+.banner{
+    height: 100px;
+}
+
+#img{
+    display: flex;
+    justify-content: center;
+    filter: contrast(2000%);
+    filter: grayscale(80%);
+    animation-name: light;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+td>a:hover{
+    background-color: #ba55c3;
+}
+
+td, th{
+    border: solid black 1px;
+    text-align: center;
+    padding: 10px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 50px;
+}
+
+th{
+    background-color: #452f8d;
+}
+
+td{
+    background-color: #97439e;
+}
+
+@keyframes light{
+    10%{
+        filter: grayscale(40%);
+    }
+    15%{
+        filter: grayscale(0%);
+    }
+    60%{
+        filter: grayscale(60%);
+    }
+    70%{
+        filter: grayscale(20%);
+    }
+    80%{
+        filter: grayscale(0%);
+    }
+} 

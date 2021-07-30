@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&display=swap');
 
 *{
     margin: 0;
@@ -10,26 +12,44 @@ li{
     list-style: none;
     margin-left: 30px;
     height: 50px;
-    width: 100px;
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10%;
+    
 }
 
-li:hover {
+.nava:hover {
     background-color: #1c2b75;
+}
+
+a:hover{
+    color: white;
+}
+
+
+
+.deroule{
+    position: absolute;
+    color: white;
+    display: none;
+    top: 50px;;
+}
+
+#menu:hover .deroule{
+    display: flex;
 }
 
 a{
     text-decoration: none;
+    font-size: 20px;
     color: white;
-    font-family: 'Merriweather Sans', sans-serif;
     height: 50px;
-    width: 100px;
+    width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 10%;
 }
 
 nav{
@@ -40,7 +60,6 @@ nav{
 
 #navul{
     display: flex;
-    /* justify-content: space-evenly; */
     height: 100%;
     align-items: center;
 }
@@ -54,6 +73,7 @@ h1{
     margin: 20px;
     font-family: 'Zen Tokyo Zoo', cursive;
     color: white;
+    font-size: 80px;
 }
 
 #logo{
@@ -70,8 +90,7 @@ body{
     background-size: cover;
     background-color: #010f3f;
     height: 100vh;
-}
-
-a:hover{
     color: white;
 }
+
+
