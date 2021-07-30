@@ -10,6 +10,8 @@
     animation-name: light;
     animation-duration: 6s;
     animation-iteration-count: infinite;
+
+    /* letter glow effect */
 }
 td>a:hover{
     background-color: #ba55c3;
