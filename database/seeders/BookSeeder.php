@@ -16,25 +16,23 @@ class BookSeeder extends Seeder
     {
         DB::table('books')->insert([
             'title' => 'Test',
-            'author' => 'Me',
+            'author_id' => 1,
             'publication_year' => '1973',
-            'genre' => 'Action',
             'synopsis' => 'Bon livre'
         ]);
 
         DB::table('books')->insert([
             'title' => 'Bleach',
-            'author' => 'Tite kubo',
+            'author_id' => 2,
             'publication_year' => '1997',
-            'genre' => 'Action',
             'synopsis' => 'C\'est le feu !'
         ]);
 
         DB::table('books')->insert([
             'title' => 'a',
-            'author' => 'T',
+            'author_id' => 3,
             'publication_year' => '1997',
-            'genre' => 'Aventure'
+            'synopsis' => 'Bien le bonjour'
         ]);
     }
 }

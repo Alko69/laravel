@@ -8,12 +8,17 @@ class CreateBooksTable extends Migration
 {
     public function up()
     {
+        Schema::disableForeignKeyConstraints();
         Schema::create('books', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('author');
+            $table->unsignedBigInteger('author_id');
+            $table->foreign('author_id')
+                ->references('id')
+                ->on('authors')
+                ->onDelete('restrict')
+                ->onUpdate('restrict');
             $table->integer('publication_year');
-            $table->string('genre');
             $table->string('synopsis')->default('Aucun résumé');
         });
     }
